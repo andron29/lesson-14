@@ -1,15 +1,10 @@
-var x = prompt("x?",'');
-var n = prompt("n?",'');
+let x = prompt("x?",'');
+x = parseInt(x);
 
-function pow (x, n) {
-    var result = x;
+let n = prompt("n?",'');
+n = parseInt(n);
 
-    for (var i = 1; i < n; i++) {
-        result *= x;
-    }
-    return result;
-}
+result=Math.pow(x, n);
 
-
-alert(pow (x, n));
-
+document.querySelector("div > h2").innerText ="result";
+alert(result);
